@@ -17,10 +17,35 @@ class Faculty
     var bonus:Int?
     var totalSalary:Int?
     
-    
-    deinit {
-        print("deinit called")  //same as destructor or finalize method in java
+    convenience init(facultyId:Int,firstName:String,lastName:String,basicSalary:Int,bonus:Int)
+    {
+        //self.init(facultyId: facultyId,firstName: firstName,lastName: lastName)
+        self.init(basicSalary: basicSalary,bonus: bonus)
+        
+        self.facultyId=facultyId
+        self.firstName=firstName
+        self.lastName=lastName
+
     }
+    
+    
+    convenience init(facultyId:Int,firstName:String,lastName:String)
+    {
+        self.init(basicSalary:0,bonus:0)
+        self.facultyId=facultyId
+        self.firstName=firstName
+        self.lastName=lastName
+    }
+    
+    private init(basicSalary:Int,bonus:Int)
+    {
+        self.basicSalary=basicSalary
+        self.bonus=bonus
+        self.totalSalary=0
+      
+    }
+    
+    
     /*func setValues()
     {
         self.facultyId=10
@@ -29,7 +54,7 @@ class Faculty
     
     func calsalary()
     {
-        totalSalary = (bonus! + basicSalary!)
+        self.totalSalary = (self.bonus! + self.basicSalary!)
         print("Total Salary is \(totalSalary!)")
     }
     
@@ -40,5 +65,8 @@ class Faculty
         print("Faculty Basic Salary is \(basicSalary!)")
         print("Faculy Bonus is \(bonus!)")
         //print("Faculty Total Salary is \()")
+    }
+    deinit {
+        print("deinit called")  //same as destructor or finalize method in java
     }
 }

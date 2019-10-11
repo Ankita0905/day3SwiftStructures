@@ -42,6 +42,10 @@ s1.calTotalMarks()
 s1.percentage()
 s1.finalResult()
 s1.printData()
+
+var f1=Faculty(facultyId: 1, firstName: "Ankita", lastName: "Jain", basicSalary: 1000, bonus: 50)
+f1.printData()
+f1.calsalary()
 /*var f1=Faculty()
 //f1.setValues()
 f1.facultyId=1
