@@ -36,10 +36,13 @@ if let x=a
 }
 
 
-var s1=Student(studentId: 10,studentName: "ankita")
-s1.printData()
+var s1=Student(studentId: 1,studentName: "Ankita",marks: ["M1":50,"M2":60,"M3":67,"M4":78,"M5":80])
 
-var f1=Faculty()
+s1.calTotalMarks()
+s1.percentage()
+s1.finalResult()
+s1.printData()
+/*var f1=Faculty()
 //f1.setValues()
 f1.facultyId=1
 f1.firstName="Ankita"
@@ -61,4 +64,4 @@ f1.calsalary()
 
 //s1.studentId=21
 //s1.printData()
-//s2.printData()
+//s2.printData()*/

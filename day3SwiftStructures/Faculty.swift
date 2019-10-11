@@ -18,6 +18,9 @@ class Faculty
     var totalSalary:Int?
     
     
+    deinit {
+        print("deinit called")  //same as destructor or finalize method in java
+    }
     /*func setValues()
     {
         self.facultyId=10
