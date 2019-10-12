@@ -8,6 +8,8 @@
 
 import Foundation
 
+// Hello
+
 //var a:Int!
 //var b=100
 //a=10
@@ -44,22 +46,29 @@ import Foundation
 //s1.printData()
 
 var f1=Faculty(facultyId: 1, firstName: "Ankita", lastName: "Jain", basicSalary: 1000, bonus: 50)
+f1.comi=10
 //f1.printData()
 //f1.calsalary()
 
 var f2=Faculty(facultyId: 2, firstName: "Kamal", lastName: "Kaur", basicSalary: 1020, bonus: 50)
+f2.comi=10
 //f2.printData()
 //f2.calsalary()
 
 var f3=Faculty(facultyId: 3, firstName: "Karan", lastName: "Kumar", basicSalary: 1030, bonus: 50)
+f3.comi=10
 //f3.printData()
 //f3.calsalary()
 
 var f4=Faculty(facultyId: 4, firstName: "Sandeep", lastName: "Singh", basicSalary: 1100, bonus: 50)
+f4.comi=10
 //f4.printData()
 //f4.calsalary()
 
-var faculties=Dictionary<Int,Faculty>()
+var faculties = Dictionary<Int,Faculty>()
+
+faculties.updateValue(f1, forKey: f1.facultyId!)
+
 faculties.updateValue(f1, forKey: f1.facultyId!)
 faculties.updateValue(f2, forKey: f2.facultyId!)
 faculties.updateValue(f3, forKey: f3.facultyId!)
@@ -67,6 +76,7 @@ faculties.updateValue(f4, forKey: f4.facultyId!)
 
 for f in faculties
 {
+    
     f.value.printData()
     //f.value.calsalary()
     print("---------------------------------------")

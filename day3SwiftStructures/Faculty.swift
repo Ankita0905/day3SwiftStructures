@@ -22,6 +22,15 @@ class Faculty
     var basicSalary:Int?
     var bonus:Int?
     private var commission:Int=0
+    var comi:Int
+    {
+        get{
+            return commission
+        }
+        set(newC){
+            commission=newC
+        }
+    }
     //var totalSalary:Int?
     var totalSalary:Int    //this is calculating tota; salary here so it is get-only property or computable property
     {

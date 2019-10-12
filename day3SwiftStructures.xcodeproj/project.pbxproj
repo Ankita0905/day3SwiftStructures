@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B7A9AE5234FF62900BD009E /*  main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A9AE4234FF62900BD009E /*  main.swift */; };
+		9B7A9AE5234FF62900BD009E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A9AE4234FF62900BD009E /* main.swift */; };
 		9B7A9AEC234FF6B000BD009E /* StudentStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A9AEB234FF6B000BD009E /* StudentStructure.swift */; };
 		9B7A9AEE234FF6FE00BD009E /* Faculty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A9AED234FF6FE00BD009E /* Faculty.swift */; };
 /* End PBXBuildFile section */
@@ -26,7 +26,7 @@
 
 /* Begin PBXFileReference section */
 		9B7A9AE1234FF62900BD009E /* day3SwiftStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = day3SwiftStructures; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B7A9AE4234FF62900BD009E /*  main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " main.swift"; sourceTree = "<group>"; };
+		9B7A9AE4234FF62900BD009E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9B7A9AEB234FF6B000BD009E /* StudentStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentStructure.swift; sourceTree = "<group>"; };
 		9B7A9AED234FF6FE00BD009E /* Faculty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Faculty.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,7 +61,7 @@
 		9B7A9AE3234FF62900BD009E /* day3SwiftStructures */ = {
 			isa = PBXGroup;
 			children = (
-				9B7A9AE4234FF62900BD009E /*  main.swift */,
+				9B7A9AE4234FF62900BD009E /* main.swift */,
 				9B7A9AEB234FF6B000BD009E /* StudentStructure.swift */,
 				9B7A9AED234FF6FE00BD009E /* Faculty.swift */,
 			);
@@ -125,7 +125,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B7A9AE5234FF62900BD009E /*  main.swift in Sources */,
+				9B7A9AE5234FF62900BD009E /* main.swift in Sources */,
 				9B7A9AEC234FF6B000BD009E /* StudentStructure.swift in Sources */,
 				9B7A9AEE234FF6FE00BD009E /* Faculty.swift in Sources */,
 			);
