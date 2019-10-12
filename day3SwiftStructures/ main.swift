@@ -8,32 +8,32 @@
 
 import Foundation
 
-var a:Int!
-var b=100
-a=10
-print(a)
-print(a!)
-print(b)
-
-let d=a+b
-if a==nil
-{
-    print("a is nil")
-}
-else
-{
-
-   // let c=(a ?? 0)+b
-    let c=a!+b
-
-   print(c)
-}
-
-if let x=a
-{
-    let c=x+a
-    print(c)
-}
+//var a:Int!
+//var b=100
+//a=10
+//print(a)
+//print(a!)
+//print(b)
+//
+//let d=a+b
+//if a==nil
+//{
+//    print("a is nil")
+//}
+//else
+//{
+//
+//   // let c=(a ?? 0)+b
+//    let c=a!+b
+//
+//   print(c)
+//}
+//
+//if let x=a
+//{
+//    let c=x+a
+//    print(c)
+//}
 
 
 //var s1=Student(studentId: 1,studentName: "Ankita",marks: ["M1":50,"M2":60,"M3":67,"M4":78,"M5":80])
@@ -68,7 +68,7 @@ faculties.updateValue(f4, forKey: f4.facultyId!)
 for f in faculties
 {
     f.value.printData()
-    f.value.calsalary()
+    //f.value.calsalary()
     print("---------------------------------------")
 }
 /*var f1=Faculty()
