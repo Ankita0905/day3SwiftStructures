@@ -13,9 +13,26 @@ class Faculty
     var facultyId:Int?
     var firstName:String?
     var lastName:String?
+    var fullName:String
+    {
+        get{
+            return "\(self.firstName!) \(self.lastName!)"
+        }
+    }
     var basicSalary:Int?
     var bonus:Int?
-    var totalSalary:Int?
+    private var commission:Int=0
+    //var totalSalary:Int?
+    var totalSalary:Int    //this is calculating tota; salary here so it is get-only property or computable property
+    {
+        get{
+            return basicSalary!+(basicSalary!*commission/100)
+        }
+//        set(ncomi){
+//            commission=ncomi
+//        }
+        //return self.basicSalary!+self.bonus!
+    }
     
     convenience init(facultyId:Int,firstName:String,lastName:String,basicSalary:Int,bonus:Int)
     {
@@ -41,7 +58,7 @@ class Faculty
     {
         self.basicSalary=basicSalary
         self.bonus=bonus
-        self.totalSalary=0
+        //self.totalSalary=0
       
     }
     
@@ -52,11 +69,11 @@ class Faculty
         self.firstName="ankita"
     }*/
     
-    func calsalary()
-    {
-        self.totalSalary = (self.bonus! + self.basicSalary!)
-        print("Total Salary is \(totalSalary!)")
-    }
+//    func calsalary()
+//    {
+//        self.totalSalary = (self.bonus! + self.basicSalary!)
+//        print("Total Salary is \(totalSalary!)")
+//    }
     
     func printData()
     {
@@ -64,7 +81,8 @@ class Faculty
         print("Faculy name is \(firstName!) \(lastName!)")
         print("Faculty Basic Salary is \(basicSalary!)")
         print("Faculy Bonus is \(bonus!)")
-        //print("Faculty Total Salary is \()")
+        print("Faculty Total Salary is \(totalSalary)")
+        print(commission)
     }
     deinit {
         print("deinit called")  //same as destructor or finalize method in java
